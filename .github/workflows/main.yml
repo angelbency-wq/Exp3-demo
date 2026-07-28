@@ -1,0 +1,24 @@
+name: Hello World
+
+on:
+  push:
+branches:
+  - main
+
+jobs:
+  say-hello:
+  runs-on: ubuntu-latest
+
+	steps:
+  	- name: Checkout Repository
+    	uses: actions/checkout@v4
+
+  	- name: Display Message
+    	run: echo "Code has been pushed successfully!-Angel"
+   	 
+  	- name: print Hello
+    	run: echo "Hello Github Actions!-Angel"
+
+
+  	- name: Show Files
+    	run: ls -la
